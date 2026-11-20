@@ -1,0 +1,11 @@
+<!doctype html><html lang="pt-BR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex"><meta name="referrer" content="no-referrer"><title>Augusto Login</title><link rel="stylesheet" href="estilo.css"></head><body>
+<h1>Login do Augusto</h1>
+<p id="msg">Lendo…</p><code id="cod" hidden></code>
+<script>
+var p=new URLSearchParams(location.search),c=p.get("code"),e=p.get("error");
+var m=document.getElementById("msg"),k=document.getElementById("cod");
+if(c){m.textContent="✅ Autorizado. Copie o código abaixo e mande pra Maeve. Ele vale só 1 vez e por poucos minutos.";k.textContent=c;k.hidden=false;}
+else if(e){m.textContent="❌ Não autorizado: "+e;}
+else{m.textContent="Esta página só recebe o retorno do login.";}
+</script>
+</body></html>

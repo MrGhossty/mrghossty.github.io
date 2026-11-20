@@ -1,0 +1,5 @@
+:root{--bg:#fff;--fg:#1a1a1a;--mut:#555;--ac:#e8742c}
+@media (prefers-color-scheme:dark){:root{--bg:#111;--fg:#eee;--mut:#aaa}}
+body{background:var(--bg);color:var(--fg);font:16px/1.6 system-ui,sans-serif;max-width:720px;margin:0 auto;padding:24px 16px}
+h1{color:var(--ac)}a{color:var(--ac)}small{color:var(--mut)}
+code{display:block;word-break:break-all;padding:12px;border:1px solid var(--mut);border-radius:8px}
